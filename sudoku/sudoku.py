@@ -5,7 +5,7 @@ def grid():
     accepted_values = list(permutations(range(1,5))) # 1<=x<5
     for i in range(0, len(all_permutations)):
         # all_permutations contains all the combinations of the possibile 4 values in this row
-        # instead accepted_values contains all the permutations of the numbers 1,2,3,4 
+        # instead accepted_values contains all the permutations of the numbers 1,2,3,4
         g = [accepted_values[all_permutations[i][j]] for j in range(0,4)]
         yield g
     raise StopIteration
